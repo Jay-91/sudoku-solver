@@ -13,12 +13,12 @@ import com.mysudoku.util.ConstraintValidator;
 @SpringBootTest
 public class SudokusolverApplicationTests {
 
- 
+
   private SudukoSolver solver = mock(SudukoSolver.class);
   private static ConstraintValidator validator = mock(ConstraintValidator.class);
 
   private static int[][] board;
-  
+
   private static final int BOARD_SIZE = 9;
 
   @Before
@@ -40,7 +40,7 @@ public class SudokusolverApplicationTests {
         {0, 9, 0, 0, 0, 0, 4, 0, 0}};
 
   }
-  
+
   private void thenValidateResults() {
     assertTrue(validator.rowConstraint(board, BOARD_SIZE - 1));
     assertTrue(validator.columnConstraint(board, BOARD_SIZE - 1));

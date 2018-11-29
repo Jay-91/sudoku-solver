@@ -10,7 +10,8 @@ public class ConstraintValidator {
   public static final int NO_VALUE = 0;
 
   /**
-   * Checks subsection constraint 3*3 
+   * Checks subsection constraint 3*3
+   * 
    * @param board
    * @param row
    * @param column
@@ -35,6 +36,7 @@ public class ConstraintValidator {
 
   /**
    * Checks the column constraint
+   * 
    * @param board
    * @param column
    * @return
@@ -47,6 +49,7 @@ public class ConstraintValidator {
 
   /**
    * Checks the row constraint
+   * 
    * @param board
    * @param row
    * @return
@@ -64,7 +67,7 @@ public class ConstraintValidator {
       } else {
         return false;
       }
-      
+
     }
     return true;
   }

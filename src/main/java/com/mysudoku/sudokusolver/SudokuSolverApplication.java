@@ -12,15 +12,14 @@ import com.mysudoku.exceptions.InvalidInputFileException;
 public class SudokuSolverApplication {
 
   private static Logger logger = LoggerFactory.getLogger(SudokuSolverApplication.class);
-  private static int[][] board;
 
   public static void main(String[] args) throws InvalidInputFileException, IOException {
     ApplicationContext context = SpringApplication.run(SudokuSolverApplication.class, args);
     SudukoSolver solver = context.getBean(SudukoSolver.class);
     logger.info("=========Start of Solver=========");
-    board = solver.retriveInput(args[0]);
-    solver.solve(board);
-    solver.printBoard(board);
+    solver.solve(solver.retriveInput(args[0]));
+    solver.printBoard();
+    solver.validateResult();
     logger.info("==========End of solver=========");
   }
 }
