@@ -9,13 +9,13 @@ import org.springframework.context.ApplicationContext;
 import com.mysudoku.exceptions.InvalidInputFileException;
 
 @SpringBootApplication
-public class SudokusolverApplication {
+public class SudokuSolverApplication {
 
-  private static Logger logger = LoggerFactory.getLogger(SudokusolverApplication.class);
+  private static Logger logger = LoggerFactory.getLogger(SudokuSolverApplication.class);
   private static int[][] board;
 
   public static void main(String[] args) throws InvalidInputFileException, IOException {
-    ApplicationContext context = SpringApplication.run(SudokusolverApplication.class, args);
+    ApplicationContext context = SpringApplication.run(SudokuSolverApplication.class, args);
     SudukoSolver solver = context.getBean(SudukoSolver.class);
     logger.info("=========Start of Solver=========");
     board = solver.retriveInput(args[0]);
