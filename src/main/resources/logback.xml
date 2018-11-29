@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="30 seconds">
+	
+	<statusListener
+		class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Set up rolling file appender with daily rollover and compression of
+	     old log files. Keeping last 60 days of logs. -->
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>logs/sudoku-solver-%d-%i.log.gz</fileNamePattern>
+			<maxHistory>60</maxHistory>
+			<maxFileSize>100MB</maxFileSize>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+
+	<logger name="com.mysudoku.sudokusolver" level="INFO" />
+
+	<root level="WARN">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>
