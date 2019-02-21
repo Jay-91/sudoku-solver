@@ -11,6 +11,12 @@
 	<name>sudokusolver</name>
 	<description>Demo project for Spring Boot</description>
 
+	<scm>
+		<url>https://github.com/Jay-91/sudoku-solver.git</url>
+		<connection>scm:git:git://github.com/Jay-91/sudoku-solver.git</connection>
+		<developerConnection>scm:git:git@github.com/Jay-91/sudoku-solver.git</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
