@@ -4,7 +4,7 @@
 
 	<groupId>com.mysudoku</groupId>
 	<artifactId>sudokusolver</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>sudokusolver</name>
@@ -14,7 +14,7 @@
 		<url>https://github.com/Jay-91/sudoku-solver.git</url>
 		<connection>scm:git:git://github.com/Jay-91/sudoku-solver.git</connection>
 		<developerConnection>scm:git:git@github.com/Jay-91/sudoku-solver.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>v1.0.1</tag>
   </scm>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
