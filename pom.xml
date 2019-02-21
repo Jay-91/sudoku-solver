@@ -4,7 +4,7 @@
 
 	<groupId>com.mysudoku</groupId>
 	<artifactId>sudokusolver</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>sudokusolver</name>
@@ -13,7 +13,7 @@
 	<scm>
 		<url>https://github.com/Jay-91/sudoku-solver.git</url>
 		<connection>scm:git:git://github.com/Jay-91/sudoku-solver.git</connection>
-		<developerConnection>scm:git:Jay-91@github.com/Jay-91/sudoku-solver.git</developerConnection>
+		<developerConnection>scm:git:git@github.com/Jay-91/sudoku-solver.git</developerConnection>
 	  <tag>v1.0.0</tag>
   </scm>
 	<parent>
