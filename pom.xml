@@ -13,7 +13,7 @@
 	<scm>
 		<url>https://github.com/Jay-91/sudoku-solver.git</url>
 		<connection>scm:git:git://github.com/Jay-91/sudoku-solver.git</connection>
-		<developerConnection>scm:git:git@github.com/Jay-91/sudoku-solver.git</developerConnection>
+		<developerConnection>scm:git:Jay-91@github.com/Jay-91/sudoku-solver.git</developerConnection>
 	  <tag>v0.0.1</tag>
   </scm>
 	<parent>
