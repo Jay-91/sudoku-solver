@@ -25,7 +25,7 @@ public class SudukoSolver {
   private static int[][] boardCopy = new int[9][9];
 
   /**
-   * Prints the final solution
+   * Prints the final solutions
    * 
    * @param board
    */
