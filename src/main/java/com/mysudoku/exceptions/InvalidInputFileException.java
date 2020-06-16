@@ -4,7 +4,6 @@ package com.mysudoku.exceptions;
 public class InvalidInputFileException extends Exception {
 
   public InvalidInputFileException(String message) {
-	  //Test revert
     super(message);
   }
 }
